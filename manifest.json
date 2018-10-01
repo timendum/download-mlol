@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Download Audiobook from MediaLibrary Online",
+  "version": "1.0",
+
+  "description": "Scarica gli mp3 degli audiolibri da mlol (MediaLibrary OnLine)",
+
+  "icons": {
+    "48": "icon48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.medialibrary.it/media/view.aspx?*"],
+      "js": ["audiobook.js"],
+	  "all_frames": true
+    }
+  ]
+
+}
